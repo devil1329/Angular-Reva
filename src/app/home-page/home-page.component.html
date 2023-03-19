@@ -1,0 +1,69 @@
+<!-- For Beginners -->
+<div class="container" id="content">
+        <div class="row row-content" style="margin-bottom: 5px;">
+                <h5 class="title">Beginners</h5>
+        </div>
+        <div class="row row-content">
+                <div class="col-sm-3" *ngFor="let anime of animeBeginnerArr">
+                        <div class="card">
+                                <img [src]="anime.animeImg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                        <div class="shadow-lg">
+                                                <h5 class="card-title text-white">{{anime.animeName}}</h5>
+                                        </div>
+                                        <p>{{anime.animeDescription}} </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!-- New Release -->
+<div class="container">
+        <div class="row row-content" style="margin-bottom: 5px;">
+                <h5 class="title">New Release</h5>
+        </div>
+        <div class="row row-content">
+                <div class="col-sm-3" *ngFor="let anime of animeNewReleaseArr">
+                        <div class="card">
+                                <img [src]="anime.animeImg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                        <div class="shadow-lg">
+                                                <h5 class="card-title text-white">{{anime.animeName}}</h5>
+                                        </div>
+                                        <p>{{anime.animeDescription}} </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!-- Famous -->
+<div class="container">
+        <div class="row row-content" style="margin-bottom: 5px;">
+                <h5 class="title">Famous</h5>
+        </div>
+        <div class="row row-content">
+                <div class="col-sm-3" *ngFor="let anime of animeFamousArr">
+                        <div class="card">
+                                <img [src]="anime.animeImg" class="card-img-top img-fluid">
+                                <div class="card-body">
+                                        <div class="shadow-lg">
+                                                <h5 class="card-title text-white">{{anime.animeName}}</h5>
+                                        </div>
+                                        <p>{{anime.animeDescription}} </p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<app-footer></app-footer>
+<!-- java scripts -->
+<script>
+        $(document).ready(function () {
+                $("#close").click(function () {
+                        $("#frm1").trigger('reset');
+                });
+        });
+</script>

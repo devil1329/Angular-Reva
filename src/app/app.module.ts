@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginRegistrationComponent } from './login-registration/login-registration.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    LoginRegistrationComponent,
+    AboutUsComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
