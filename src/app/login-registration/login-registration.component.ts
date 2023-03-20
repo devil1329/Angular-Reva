@@ -35,6 +35,7 @@ export class LoginRegistrationComponent implements OnInit{
 			email : '',
 			password : ''
 		};
+		alert("Registered Successfully")
 	}
 	onLogin(){
 		const isUserExist = this.registeredUsers.find(user => user.username == this.loginObj.username && user.password == this.loginObj.password)
